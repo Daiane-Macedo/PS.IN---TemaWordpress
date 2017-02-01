@@ -1,0 +1,202 @@
+html{
+    margin: 0 !important;
+    }
+header{
+	background-color: #3498db;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    background-size: cover;
+    font-family: 'Arial';
+}
+
+@media (max-width:991px){
+    header{
+        background-size: 100% 50%;
+    }
+}
+linha::after{
+	clear: both
+}
+.logomarca a{
+	font-size: 20px;
+    color: #fff;
+	display: inline-block;
+	float: left;
+	text-decoration: none; 
+    padding-top: 20px;;    
+	margin-right: 35px;
+    margin-left: 35px;
+}
+#header{
+    width:100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Century Gothic', 'Arial';
+
+}
+
+#textoheader h1{
+    font-size: 3em;
+    line-height: 1.45;
+    color: #fff;
+    text-align: center;
+    margin-top:160px;
+}
+.botao a{
+    font-size: 17px;
+    background-color:#3498db;
+	text-decoration: none; 
+	display: inline-block; /*identifica link como um bloco. Sempre fazer com links*/
+	margin-top: 50px;
+	background-color:transparent;
+	color:#fff;
+	padding: 15px 50px;
+    border: solid;
+    border-color: skyblue;
+    border-width:2px;
+}
+.botao a:hover{
+    background-color:#3498db;
+    color:#fff;  
+    opacity: 0.8;
+} 
+.clear {
+    clear: both;
+}
+
+#navbar {
+    margin-top: 0px;
+    color: #fff;
+    background-color: #000;
+    height: 70px;
+}
+#navbar p{
+    color: white   
+}
+
+.menu{
+    width: 200px;
+    height: 400px;
+    position: fixed;
+    top: 70px;
+    right:-200px;
+    background-color:#000;
+}
+.menu ul{
+    list-style: none;
+}
+
+.opcoes a{
+    text-decoration: none;
+    color: rgba(211, 211, 211, 1);
+    transition: 0.3s;
+}
+.opcoes a:hover{
+    color: rgba(211, 211, 211, 0.6);
+    transition: 0.3s;
+}
+
+#navicon:checked ~ .menu{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    right: 0;
+    z-index:999;
+
+}
+.botaoMenu::after{
+    content: "MENU";
+    z-index:999;
+    position: absolute;
+}  
+.botaoMenu{
+    margin-right: 150px;
+    float: right;
+    margin-top: 30px;
+}
+
+#navicon:checked + label::after{
+    content: "X";
+}
+#navicon{
+    display: none;
+}
+
+.col-md-4 ul{
+    display: inline;
+}
+footer{
+    background-color: #1C1C1C;
+    text-align: center;
+    color: #fff;
+    height: 200px;
+}
+.textofooter{
+    padding-top: 70px;
+    color:gray;
+}
+
+.minhaimagem{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    
+}
+.col-md-6 col-sm-6 col-xs-12{
+    margin: 0;
+    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+}
+#publicacao1{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+}
+#publicacao1 h2{
+    text-align: right;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 150px;
+    
+}
+#publicacao1 p{
+    padding-left:150px;
+    padding-right: 150px;
+    color: gray;
+}
+
+#publicacao2{
+    width: 100%;
+    height: 500px;
+    background-color:#1abc9c;
+}
+#publicacao2 h2{
+    text-align: left;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    color:#fff;
+}
+#publicacao2 p{
+    padding-left:150px;
+    padding-right: 150px;
+    color:rgba(255, 255, 255, 0.75)
+}
+
